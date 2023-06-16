@@ -3,7 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tempmail</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/quries.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="container navbar">
+          <span class="logo">
+            <span class="bigat"> @ </span>
+            <span class="brandname"> Mailmoon </span>
+          </span>
+
+          <div class="nav-links-container">
+            <div class="nav-links-close" onclick="closeFloatingMenu()">
+              <ion-icon class="icon" name="close-outline"></ion-icon>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-links-item">
+                <a href="premium.html" class="nav-link">
+                  <ion-icon class="icon" name="diamond-outline"></ion-icon>
+                  <span>Premium</span>
+                </a>
+              </li>
+              <li class="nav-links-item">
+                <a href="#" class="nav-link">
+                  <ion-icon class="icon" name="help-outline"></ion-icon>
+                  <span>Support</span>
+                </a>
+              </li>
+              <li class="nav-links-item">
+                <a href="#" class="btn nav-link">Log in</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-button" onclick="openFloatingMenu()">
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-email">
+      <div class="container">
+        <div class="email">
+          <div class="email-picker-container">
+            <div class="email-box">
+              <input
+                class="email-input"
+                value="example@email.com"
+                title=""
+                readonly
+              />
+              <button class="btn--action email-copy-button">
+                <ion-icon
+                  class="email-copy-icon"
+                  name="clipboard-outline"
+                ></ion-icon>
+              </button>
+            </div>
+
+            <ul class="controls">
+              <li class="control btn--action">
+                <ion-icon class="control-icon" name="refresh"></ion-icon>
+                <span class="control-text">Refresh</span>
+              </li>
+              <li class="control btn--action">
+                <ion-icon class="control-icon" name="dice-outline"></ion-icon>
+                <span class="control-text">Random</span>
+              </li>
+              <li class="control btn--action">
+                <ion-icon class="control-icon" name="people-outline"></ion-icon>
+                <span class="control-text">Change</span>
+              </li>
+              <li class="control btn--action">
+                <ion-icon class="control-icon" name="trash-outline"></ion-icon>
+                <span class="control-text">Delete</span>
+              </li>
+            </ul>
+
+            <div class="container msg-box message-content-box hidden">
+              <div class="message-content">
+                <div class="message-content-subject">
+                  <div class="btn--ghost close-message-button">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                    <span>Back</span>
+                  </div>
+                  <span class="message-content-title">Hi</span>
+                </div>
+                <div class="message-content-sender-info">
+                  <p class="sender-name">Yousuf Habieb</p>
+                  <p class="sender-email">yousefgog@gmail.com</p>
+                  <p class="sender-time">
+                    Wed Jun 14 2023 03:50:59 GMT+0300 (Eastern European Summer
+                    Time)
+                  </p>
+                </div>
+              </div>
+              <iframe
+                class="message-content-html"
+                onload="javascript:resizeIframe(this)"
+                frameborder="0"
+                scrolling="true"
+                src="message-example.html"
+                id="myIframe"
+              ></iframe>
+            </div>
+
+            <div class="msg-box messages-box">
+              <div class="message">
+                <div class="message-title">
+                  <span>Hi</span>
+                </div>
+                <p class="message-sender">
+                  Yousuf Habieb &lt;yousefgog@gmail.com&gt;
+                </p>
+                <p class="message-description"></p>
+                <ion-icon class="show-icon" name="exit-outline"></ion-icon>
+              </div>
+
+              <div class="message">
+                <p class="message-title">Hi</p>
+                <p class="message-sender">
+                  Yousuf Habieb &lt;yousefgog@gmail.com&gt;
+                </p>
+                <p class="message-description"></p>
+                <ion-icon class="show-icon" name="exit-outline"></ion-icon>
+              </div>
+
+              <div class="message">
+                <p class="message-title">Hi</p>
+                <p class="message-sender">
+                  Yousuf Habieb &lt;yousefgog@gmail.com&gt;
+                </p>
+                <p class="message-description"></p>
+                <ion-icon class="show-icon" name="exit-outline"></ion-icon>
+              </div>
+
+              <div class="message">
+                <p class="message-title">Hi</p>
+                <p class="message-sender">
+                  Yousuf Habieb &lt;yousefgog@gmail.com&gt;
+                </p>
+                <p class="message-description"></p>
+                <ion-icon class="show-icon" name="exit-outline"></ion-icon>
+              </div>
+
+              <div class="message">
+                <p class="message-title">Hi</p>
+                <p class="message-sender">
+                  Yousuf Habieb &lt;yousefgog@gmail.com&gt;
+                </p>
+                <p class="message-description"></p>
+                <ion-icon class="show-icon" name="exit-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

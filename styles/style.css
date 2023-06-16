@@ -66,7 +66,7 @@ nav {
 
 .section-email {
   background-color: var(--background-color);
-  padding: 9.2rem 0 0;
+  padding: 9.2rem 0 9.2rem;
 }
 
 .email {
@@ -263,6 +263,10 @@ Premium Section
   padding: 4.8rem 0;
 }
 
+.premium-main-header {
+  margin-bottom: 6.4rem;
+}
+
 .premium-switch-container {
   text-align: center;
 }
@@ -313,7 +317,7 @@ Premium Section
 }
 
 .premium-plans {
-  margin-top: 4.8rem !important;
+  margin: 4.8rem auto 2.4rem !important;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
@@ -425,18 +429,6 @@ Premium Section
   position: relative;
 }
 
-/* .email-input-container {
-  margin-bottom: 1.2rem;
-  width: 100%;
-} 
-
-.subscribe-input-label {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.5;
-} */
-
 .subscribe-input {
   width: 100%;
   padding: 1.2rem;
@@ -446,6 +438,7 @@ Premium Section
   color: inherit;
   font-size: 1.8rem;
   border-radius: 11px;
+  transition: 0.3s all;
 }
 
 .subscribe-input:active,
@@ -470,4 +463,72 @@ Premium Section
 .subscribe-form-button-icon {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.footer {
+  box-shadow: -0.5rem 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  row-gap: 4.8rem;
+  padding: 4.8rem 0;
+}
+
+.footer-section {
+  max-width: 450px;
+  padding: 0 2.4rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-social-media-container {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.social-media:link,
+.social-media:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  /* box-shadow: 0.4rem 0.4rem 10px 0.1rem rgba(0, 0, 0, 0.1); */
+  transition: 0.3s all;
+}
+
+.social-media:hover,
+.social-media:active {
+  color: var(--hover-color);
+}
+
+.social-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-links {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.4rem;
+  color: #fff;
+  transition: 0.3s all;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--hover-color);
 }

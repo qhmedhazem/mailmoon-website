@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempmail</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/quries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="container navbar">
+          <div class="logo">
+            <span class="bigat"> @ </span>
+            <span class="brandname"> Mailmoon </span>
+          </div>
+
+          <div class="nav-links-container">
+            <div class="nav-links-close" onclick="closeFloatingMenu()">
+              <ion-icon class="icon" name="close-outline"></ion-icon>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-links-item">
+                <a href="index.html" class="nav-link">
+                  <ion-icon class="icon" name="mail-outline"></ion-icon>
+                  <span>Emails</span>
+                </a>
+              </li>
+              <li class="nav-links-item">
+                <a href="#" class="nav-link">
+                  <ion-icon class="icon" name="help-outline"></ion-icon>
+                  <span>Support</span>
+                </a>
+              </li>
+              <li class="nav-links-item">
+                <a href="#" class="btn nav-link">Log in</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-button" onclick="openFloatingMenu()">
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-premium">
+      <div class="premium-main-header container">
+        <h1 class="main-heading">Ready for upgrade?</h1>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas sed
+          necessitatibus aliquam ea accusamus incidunt ad corporis iure eligendi
+          aut. Error, sunt qui! Ullam architecto nam sint labore repudiandae
+          hic?
+        </p>
+      </div>
+
+      <div class="premium-switch-container">
+        <div class="premium-switch left">
+          <span onclick="changeSwitch(this)">Monthly</span>
+          <span onclick="changeSwitch(this)">Yearly</span>
+        </div>
+      </div>
+
+      <div class="premium-plans container">
+        <div class="premium-card">
+          <ion-icon class="premium-card-icon" name="flash-outline"></ion-icon>
+          <span class="premium-card-title">Basic</span>
+          <p class="premium-card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            tenetur ea ipsa quisquam delectus officiis natus, ut repellendus
+            quos dolore a minus nostrum nesciunt odit doloribus, libero autem?
+            Fugiat, maxime.
+          </p>
+
+          <div class="premium-card-price-container">
+            <span class="premium-card-price">$9.99</span>
+            <span class="premium-card-price-per">/mo</span>
+          </div>
+
+          <ul class="list premium-card-features">
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <form class="subscribe-input-container">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe-email-input"
+              id="subscribe-email-input"
+              placeholder="Enter your email address"
+            />
+            <button class="btn--action subscribe-form-submit" action="submit">
+              <ion-icon
+                class="subscribe-form-button-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </form>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="premium-card most-popular-premium-plan">
+          <ion-icon
+            class="premium-card-icon"
+            name="sparkles-outline"
+          ></ion-icon>
+          <span class="premium-card-title">Pro</span>
+          <p class="premium-card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            tenetur ea ipsa quisquam delectus officiis natus, ut repellendus
+            quos dolore a minus nostrum nesciunt odit doloribus, libero autem?
+            Fugiat, maxime.
+          </p>
+
+          <div class="premium-card-price-container">
+            <span class="premium-card-price">$14.99</span>
+            <span class="premium-card-price-per">/mo</span>
+          </div>
+
+          <ul class="list premium-card-features">
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+            <li class="premium-card-feature">
+              <ion-icon
+                class="premium-feature-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <div class="premium-card-feature-content">
+                <p class="premium-card-feature-title">Some feature</p>
+                <p class="premium-card-feature-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <form class="subscribe-input-container">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe-email-input"
+              id="subscribe-email-input"
+              placeholder="Enter your email address"
+            />
+            <button class="btn--action subscribe-form-submit" action="submit">
+              <ion-icon
+                class="subscribe-form-button-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="additonal-info text-center">
+        All the prices includes taxes
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-section">
+          <div class="logo">
+            <span class="bigat"> @ </span>
+            <span class="brandname"> Mailmoon </span>
+          </div>
+          <p class="additonal-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+            dicta aut nobis quidem cupiditate quaerat, quo voluptate tempora
+            fugit impedit quisquam magnam, vero consequatur et quam maiores!
+            Doloribus, pariatur qui.
+          </p>
+
+          <div class="footer-social-media-container">
+            <a href="#" class="social-media social-media-link">
+              <ion-icon class="social-logo" name="logo-discord"></ion-icon>
+            </a>
+            <a href="#" class="social-media social-media-link">
+              <ion-icon class="social-logo" name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="social-media social-media-link">
+              <ion-icon class="social-logo" name="logo-tiktok"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <p class="footer-header">Useful Links</p>
+
+          <ul class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="premium.html" class="footer-link">Pricing</a>
+            <a href="#" class="footer-link">Login/Sign up</a>
+            <a href="#" class="footer-link">Terms Of Service</a>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <p class="footer-header">Help</p>
+
+          <ul class="footer-links">
+            <a href="index.html" class="footer-link">Help Me</a>
+            <a href="premium.html" class="footer-link">Feedback</a>
+            <a href="#" class="footer-link">Report a Issue / Bug</a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

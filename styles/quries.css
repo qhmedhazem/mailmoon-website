@@ -1,0 +1,102 @@
+@media (max-width: 78.125em) {
+  .navbar {
+    padding: 2.4rem 3.6rem;
+  }
+}
+
+@media (max-width: 53.125em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-links {
+    margin-top: 0.8rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .premium-plans {
+    grid-template-columns: 1fr;
+    padding: 0rem 2.4rem;
+  }
+
+  .nav-links-container {
+    transition: all 0.3s ease;
+    top: 0%;
+    left: 0%;
+    transform: translate(150%, 0%);
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--background-color);
+    justify-content: center;
+    font-size: 3.6rem;
+    gap: 4.8rem;
+  }
+
+  .nav-links-close {
+    display: block;
+    top: 3%;
+    right: 5%;
+  }
+
+  .nav-links-close .icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .nav-links .nav-links-item .btn {
+    padding: 1rem 5.4rem !important;
+  }
+
+  .messages-box {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 43.75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .email-box {
+    width: 100%;
+  }
+
+  .email-picker-container {
+    width: 100%;
+    padding: 2.4rem;
+  }
+}
+
+@media (max-width: 31.875em) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .controls {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 2.4rem 2.4rem;
+  }
+}
